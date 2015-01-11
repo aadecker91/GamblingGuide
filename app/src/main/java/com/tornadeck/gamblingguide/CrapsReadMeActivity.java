@@ -11,7 +11,7 @@ import android.view.MenuItem;
 public class CrapsReadMeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practice_blackjack);
+        setContentView(R.layout.activity_readme_craps);
 
 
     }

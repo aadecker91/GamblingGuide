@@ -20,16 +20,16 @@ public class CrapsBankrollActivity extends ActionBarActivity {
         final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                double average_rolls = 3.35;
-                double pass_std_dev = 1.0;
-                double four_ten_std_dev = 1.41;
-                double five_nine_std_dev = 1.22;
-                double six_eight_std_dev = 1.10;
+                final double average_rolls = 3.376;
+                final double pass_std_dev = 1.0;
+                final double four_ten_std_dev = 1.41;
+                final double five_nine_std_dev = 1.22;
+                final double six_eight_std_dev = 1.10;
                 double adjusted_pass_std_dev;
                 double adjusted_four_ten_std_dev;
                 double adjusted_five_nine_std_dev;
                 double adjusted_six_eight_std_dev;
-                double house_edge = 0.0141;
+                final double house_edge = 0.0141;
                 double number_of_rolls = 100;
                 double adjusted_num_of_rolls = 0;
                 double rolls_resolved;

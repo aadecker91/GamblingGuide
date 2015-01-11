@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/readme_blackjack"
+            android:text="@string/readme_craps"
             android:id="@+id/textView10"
             android:layout_gravity="center_horizontal"/>
 
@@ -29,14 +29,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rules_blackjack"
+            android:text="@string/rules_craps"
             android:id="@+id/textView16"
             android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player Actions"
+            android:text="Player Bets"
             android:id="@+id/textView13"
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/player_actions_blackjack"
+            android:text="@string/player_bets_craps"
             android:id="@+id/textView14"
             android:layout_gravity="center_horizontal"/>
 
@@ -61,9 +61,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="&#8226;Always try to find a table that pays 3-2 for Blackjack.  Often times you will see other odds like 6-5, this substantially enlarges the house edge."
+            android:text="&#8226;Don't be afraid to sit and watch for a while before jumping in and playing."
             android:id="@+id/textView12"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
-    </ScrollView>
+</ScrollView>
