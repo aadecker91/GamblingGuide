@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gambler\'s Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="blackjack">Blackjack</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="craps">Craps</string>
+    <string name="bankroll">Bankroll</string>
+    <string name="betting">Betting</string>
+    <string name="practice">Practice</string>
+    <string name="map">Map</string>
+    <string name="read_me">Read Me</string>
+    <string name="bet">Your Bet</string>
+    <string name="bet_label">Average Bet: </string>
+    <string name="bankroll_default">0 Dollars</string>
+    <string name="calculate">Calculate</string>
+    <string name="spin">Percentage Loss</string>
+    <string name="percentage">Percentage: </string>
+    <string name="back">Back</string>
+    <string name="hours">Hours:</string>
+    <string name="walk_away">Walk away at:</string>
+    <string name="recommended">Recommended Bankroll:</string>
+    <string name="bj_betting">The following betting strategy will allow you to reduce the house ege to around 0.53%. The betting strategy is based upon the current sum of your hand, and the card that the dealing is showing.</string>
+    <string name="todo">This has not been implemented yet! Look for an update soon!</string>
+    <string name="introduction">This application is made for beginners who want to educate themselves before gambling. It\'s not just about luck, by being knowledgeable about what games to play and how to play, you can minimize losses, and maybe even come out on top.\nThis application includes beginners details on some of the more popular (and most fair) casino games.  Remember that EVERYTHING in a casino is to the casino\'s advantage, smart gamblers do not play to win, they play to have fun, and if they do win it\'s a nice bonus.  For each casino game in the application, there are four sections to help you succeed, each section is gone over in detail below:</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="readme_blackjack">Blackjack is the most widely played casino game in the world. Blackjack is a card game between a player and dealer, meaning that players compete against the dealer but not against any other players. The object of the game is to beat the dealer, which can be done in a number of ways:\n\n• Get 21 points on the player\'s first two cards (called a blackjack), without a dealer blackjack;\n• Reach a final score higher than the dealer without exceeding 21; or\n• Let the dealer draw additional cards until his or her hand exceeds 21.\n\nThe player or players are dealt an initial two-card hand and add together the value of their cards. Face cards are counted as ten points. A player and the dealer can count his or her own ace as 1 point or 11 points. All other cards are counted as the numeric value shown on the card. After receiving their initial two cards, players have several possible actions discussed later on. In a given round, the player or the dealer wins by having a score of 21 or by having the highest score that is less than 21. Scoring higher than 21 (\"busting\") results in a loss. A player may win by having any final score equal to or less than 21 if the dealer busts. If a player holds an ace valued as 11, the hand is called \"soft\", meaning that the player cannot go bust by taking an additional card; 11 plus the value of any other card will always be less than or equal to 21. Otherwise, the hand is \"hard\".\n\nThe dealer has to take hits until his or her cards total 17 or more points. (In some casinos the dealer also hits on a \"soft\" 17, e.g. an initial ace and six.) Players win if they do not bust and have a total that is higher than the dealer\'s. The dealer loses if he or she busts or has a lesser hand than the player who has not busted. If the player and dealer have the same total, this is called a \"push\" and the player typically does not win or lose money on that hand.\n\nAfter receiving an initial two cards, the player has up to four standard options: \"hit\", \"stand\", \"double down\", or \"split\". Each option has a corresponding hand signal.\n\n• Hit: Take another card from the dealer. Signal: Tap the table with finger or wave hand toward body.\n• Stand: Take no more cards. Signal: Wave hand horizontally.\n• Double down: The player is allowed to double his initial bet in exchange for committing to stand after receiving exactly one more card. The additional bet is placed in the betting box next to the original bet. Signal: Place additional chips beside the original bet outside the betting box, and point with one finger.\n• Split: If the first two cards of a hand have the same value, the player can split them into two hands, by moving a second bet equal to the first into an area outside the betting box. The dealer separates the two cards and draws an additional card on each, placing one bet with each hand. The player then plays out the two separate hands in turn; except for a few restrictions, the hands are treated as independent new hands, with the player winning or losing their wager separately for each hand. Doubling and further splitting of post-split hands may be restricted, and blackjacks after a split are counted as non-blackjack 21 when comparing against the dealer\'s hand. Hitting split aces is usually not allowed. Signal: Place additional chips next to the original bet outside the betting box; point with two fingers spread into a V formation.</string>
+
+    <string-array name="spinnerItems">
+        <item>15%</item>
+        <item>10%</item>
+        <item>5%</item>
+        <item>2.5%</item>
+    </string-array>
+
+    <string-array name="spinnerItems2">
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>3 Hours</item>
+        <item>4 Hours</item>
+        <item>8 Hours</item>
+    </string-array>
+
+</resources>

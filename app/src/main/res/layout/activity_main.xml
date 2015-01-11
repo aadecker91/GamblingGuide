@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getting_started"
+        android:id="@+id/gettingStarted"
+        android:textSize="45sp"
+        android:onClick="gettingStarted"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/blackjack"
+        android:id="@+id/blackjack"
+        android:textSize="50sp"
+        android:onClick="goToBlackjack"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator2"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/craps"
+        android:id="@+id/craps"
+        android:textSize="50sp"
+        android:onClick="goToCraps"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator3"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/map"
+        android:id="@+id/map"
+        android:textSize="50sp"
+        android:onClick="goToMap"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator4"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>

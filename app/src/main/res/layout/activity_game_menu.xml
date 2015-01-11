@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_me"
+        android:id="@+id/readMe"
+        android:textSize="55sp"
+        android:onClick="goToReadMe"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/betting"
+        android:id="@+id/betting"
+        android:textSize="55sp"
+        android:onClick="goToBetting"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator3"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bankroll"
+        android:id="@+id/bankroll"
+        android:textSize="55sp"
+        android:onClick="goToBankRoll"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator2"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/practice"
+        android:id="@+id/practice"
+        android:textSize="55sp"
+        android:onClick="goToPractice"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator4"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/back"
+        android:textSize="55sp"
+        android:onClick="goBack"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/separator5"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

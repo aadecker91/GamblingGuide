@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introduction"
+            android:id="@+id/textView10"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_me"
+            android:id="@+id/textView15"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For each casino game, this section includes basic instructions on how the game is played, the rules of the game, and other helpful tips about that game."
+            android:id="@+id/textView16"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/betting"
+            android:id="@+id/textView19"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This section describes some easy and optimized betting strategies for the game you are playing.  This is not going to be the optimal betting strategy, but it is optimized and will tell you the approximate house edge with that betting strategy."
+            android:id="@+id/textView20"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bankroll"
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Bankroll calculator suggests an amount of money to bring to a table and when to walk away if you are winning.  The calculation is based upon how long you want to play at that table, and assumes that you are using the betting strategy described in the Betting section."
+            android:id="@+id/textView18"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/practice"
+            android:id="@+id/textView21"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A practice/help scenario (this is not yet completed)"
+            android:id="@+id/textView22"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer"
+            android:id="@+id/textView13"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#8226; The application is in no way perfect, it is meant to be a helpful/simple guide, but not to be completely comprehensive.\n&#8226; Every game/slot in a casino has a house advantage, there is no easy way to overcome this advantage.  A smart gambler understands that he/she is paying for entertainment in a casino.  The more educated on gambling you are, the less you will end up paying.\n&#8226; The house edges given in the Betting section are not exact, but are good enough to approximate for most casinos."
+            android:id="@+id/textView14"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    </ScrollView>
