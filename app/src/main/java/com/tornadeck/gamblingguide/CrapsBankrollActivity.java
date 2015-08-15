@@ -1,5 +1,6 @@
 package com.tornadeck.gamblingguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -30,7 +31,7 @@ public class CrapsBankrollActivity extends ActionBarActivity {
                 double adjusted_five_nine_std_dev;
                 double adjusted_six_eight_std_dev;
                 final double house_edge = 0.0141;
-                double number_of_rolls = 100;
+                double number_of_rolls = 170;
                 double adjusted_num_of_rolls = 0;
                 double rolls_resolved;
                 double average_bet = 0;
@@ -73,8 +74,8 @@ public class CrapsBankrollActivity extends ActionBarActivity {
                 //TODO average_bet = average_rolls * average_bet;
 
                 base_value = (average_bet * rolls_resolved) * house_edge;
-                final_value = (int) (base_value + (adjusted_pass_std_dev * Math.sqrt(rolls_resolved) * average_bet) + (adjusted_four_ten_std_dev * Math.sqrt(rolls_resolved) * average_bet * 6 / 36) + (adjusted_five_nine_std_dev * Math.sqrt(rolls_resolved) * average_bet * 8 / 36) + (adjusted_six_eight_std_dev * Math.sqrt(rolls_resolved) * average_bet * 10 / 36));
-                final_value_walk_away = (int) ((0.5 * pass_std_dev * Math.sqrt(rolls_resolved) * average_bet) + (0.5 * four_ten_std_dev * Math.sqrt(rolls_resolved) * average_bet * 6 / 36) + (0.5 * five_nine_std_dev * Math.sqrt(rolls_resolved) * average_bet * 8 / 36) + (0.5 * six_eight_std_dev * Math.sqrt(rolls_resolved) * average_bet * 10 / 36));
+                final_value = (int) Math.round(base_value + (adjusted_pass_std_dev * Math.sqrt(rolls_resolved) * average_bet) + (adjusted_four_ten_std_dev * Math.sqrt(rolls_resolved) * average_bet * 6 / 36) + (adjusted_five_nine_std_dev * Math.sqrt(rolls_resolved) * average_bet * 8 / 36) + (adjusted_six_eight_std_dev * Math.sqrt(rolls_resolved) * average_bet * 10 / 36));
+                final_value_walk_away = (int) Math.round((0.5 * pass_std_dev * Math.sqrt(rolls_resolved) * average_bet) + (0.5 * four_ten_std_dev * Math.sqrt(rolls_resolved) * average_bet * 6 / 36) + (0.5 * five_nine_std_dev * Math.sqrt(rolls_resolved) * average_bet * 8 / 36) + (0.5 * six_eight_std_dev * Math.sqrt(rolls_resolved) * average_bet * 10 / 36));
 
                 String text_value = Integer.toString(final_value);
                 String text_value_walk_away = Integer.toString(final_value_walk_away);
@@ -88,25 +89,28 @@ public class CrapsBankrollActivity extends ActionBarActivity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//TODO: Implement settings
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            Intent intent = new Intent(this, SettingsActivity.class);
+//            startActivity(intent);
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }

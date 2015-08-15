@@ -3,7 +3,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -62,6 +62,10 @@
         <activity
             android:name="com.tornadeck.gamblingguide.CrapsReadMeActivity"
             android:label="@string/read_me" >
+        </activity>
+        <activity
+            android:name="com.tornadeck.gamblingguide.SettingsActivity"
+            android:label="@string/action_settings" >
         </activity>
     </application>
 

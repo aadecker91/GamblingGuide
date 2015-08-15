@@ -7,7 +7,7 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="16dp">
 
         <TextView
@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rules"
+            android:text="@string/rules"
             android:id="@+id/textView15"
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
@@ -33,10 +33,25 @@
             android:id="@+id/textView16"
             android:layout_gravity="center_horizontal"/>
 
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/blackjack_example"
+            android:layout_weight="1"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player Actions"
+            android:text="@string/rules_blackjack2"
+            android:id="@+id/textView17"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_actions"
             android:id="@+id/textView13"
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
@@ -52,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Additional Info"
+            android:text="@string/additional_info"
             android:id="@+id/textView11"
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
@@ -61,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="&#8226;Always try to find a table that pays 3-2 for Blackjack.  Often times you will see other odds like 6-5, this substantially enlarges the house edge."
+            android:text="@string/blackjack_additional"
             android:id="@+id/textView12"
             android:layout_gravity="center_horizontal" />
 

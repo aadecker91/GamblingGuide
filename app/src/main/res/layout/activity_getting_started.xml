@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For each casino game, this section includes basic instructions on how the game is played, the rules of the game, and other helpful tips about that game."
+            android:text="@string/getting_started_readme"
             android:id="@+id/textView16"
             android:layout_gravity="center_horizontal" />
 
@@ -46,7 +46,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This section describes some easy and optimized betting strategies for the game you are playing.  This is not going to be the optimal betting strategy, but it is optimized and will tell you the approximate house edge with that betting strategy."
+            android:text="@string/getting_started_betting"
             android:id="@+id/textView20"
             android:layout_gravity="center_horizontal" />
 
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Bankroll calculator suggests an amount of money to bring to a table and when to walk away if you are winning.  The calculation is based upon how long you want to play at that table, and assumes that you are using the betting strategy described in the Betting section."
+            android:text="@string/getting_started_bankroll"
             android:id="@+id/textView18"
             android:layout_gravity="center_horizontal"/>
 
@@ -78,7 +78,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A practice/help scenario (this is not yet completed)"
+            android:text="@string/getting_started_practice"
             android:id="@+id/textView22"
             android:layout_gravity="center_horizontal" />
 
@@ -94,7 +94,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="&#8226; The application is in no way perfect, it is meant to be a helpful/simple guide, but not to be completely comprehensive.\n&#8226; Every game/slot in a casino has a house advantage, there is no easy way to overcome this advantage.  A smart gambler understands that he/she is paying for entertainment in a casino.  The more educated on gambling you are, the less you will end up paying.\n&#8226; The house edges given in the Betting section are not exact, but are good enough to approximate for most casinos."
+            android:text="@string/disclaimer_details"
             android:id="@+id/textView14"
             android:layout_gravity="center_horizontal" />
 
