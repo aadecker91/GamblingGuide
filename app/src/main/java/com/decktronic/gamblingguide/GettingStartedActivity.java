@@ -1,22 +1,19 @@
-package com.tornadeck.gamblingguide;
+package com.decktronic.gamblingguide;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 
 /**
- * Created by Adam on 1/9/2015.
+ * Created by Adam on 12/15/2014.
  */
-public class CrapsBettingActivity extends ActionBarActivity {
+public class GettingStartedActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_betting_craps);
-
+        setContentView(R.layout.activity_getting_started);
 
     }
-//TODO: Implement settings
+
+    //TODO: Implement settings
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        // Inflate the menu; this adds items to the action bar if it is present.

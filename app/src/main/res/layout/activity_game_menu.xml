@@ -12,7 +12,8 @@
         android:textSize="55sp"
         android:onClick="goToReadMe"
         android:gravity="center_horizontal"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:clickable="true"/>
 
     <View
         android:layout_width="fill_parent"
@@ -29,7 +30,8 @@
         android:textSize="55sp"
         android:onClick="goToBetting"
         android:gravity="center_horizontal"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:clickable="true"/>
 
     <View
         android:layout_width="fill_parent"
@@ -47,7 +49,8 @@
         android:textSize="55sp"
         android:onClick="goToBankRoll"
         android:gravity="center_horizontal"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:clickable="true"/>
 
     <View
         android:layout_width="fill_parent"

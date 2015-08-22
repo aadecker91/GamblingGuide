@@ -1,130 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:gravity="center_horizontal">
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/bet_label"
-            android:id="@+id/textView"
-            android:textSize="30sp"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
-
-        <EditText
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:hint="@string/bet"/>
-    </LinearLayout>
+            android:layout_gravity="center_horizontal">
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="0.5dp"
-        android:id="@+id/separator"
-        android:visibility="visible"
-        android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bet_label"
+                android:id="@+id/textView"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:hint="@string/bet"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/separator"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hours"
+                android:id="@+id/textView4"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/spin"
+                android:entries="@array/spinnerItems2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/separator1"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hours"
-            android:id="@+id/textView4"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/recommended"
+            android:id="@+id/textView5"
             android:textSize="30sp"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
+            android:layout_marginTop="20dp"/>
 
-        <Spinner
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner2"
-            android:drawSelectorOnTop="true"
-            android:prompt="@string/spin"
-            android:entries="@array/spinnerItems2"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/bankroll_default"
+            android:id="@+id/textView2"
+            android:textSize="55sp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/separator5"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/walk_away"
+            android:id="@+id/textView6"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/bankroll_default"
+            android:id="@+id/textView7"
+            android:textSize="55sp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/separator2"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:id="@+id/button"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/separator3"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+
     </LinearLayout>
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="0.5dp"
-        android:id="@+id/separator1"
-        android:visibility="visible"
-        android:background="@android:color/darker_gray"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/recommended"
-        android:id="@+id/textView5"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/bankroll_default"
-        android:id="@+id/textView2"
-        android:textSize="55sp"
-        android:layout_marginBottom="20dp"/>
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="0.5dp"
-        android:id="@+id/separator5"
-        android:visibility="visible"
-        android:background="@android:color/darker_gray"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/walk_away"
-        android:id="@+id/textView6"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/bankroll_default"
-        android:id="@+id/textView7"
-        android:textSize="55sp"
-        android:layout_marginBottom="20dp"/>
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="0.5dp"
-        android:id="@+id/separator2"
-        android:visibility="visible"
-        android:background="@android:color/darker_gray"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calculate"
-        android:id="@+id/button"/>
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="0.5dp"
-        android:id="@+id/separator3"
-        android:visibility="visible"
-        android:background="@android:color/darker_gray"/>
-
-</LinearLayout>
+</ScrollView>

@@ -34,8 +34,8 @@
     <string name="disclaimer_details">• The application is in no way perfect, it is meant to be a helpful resource for beginners.\n• Every game/slot in a casino has a house advantage, there is no easy way to overcome this advantage. A smart gambler understands that he/she is paying for entertainment in a casino. The more educated you are, the less you will end up paying.\n• The house edges given in the Betting section are not exact, but are good enough approximations for most casinos.</string>
     <string name="getting_started_practice">A practice/help scenario (this has not yet been implemented)</string>
     <string name="getting_started_bankroll">The Bankroll calculator suggests an amount of money to bring to a table and when to walk away if you are winning. The calculation is based upon how long you want to play at that table, and assumes that you are using a betting strategy described in the Betting section.</string>
-    <string name="getting_started_readme">This section includes basic instructions on how the game is played, the rules of the game, and a few helpful tips about that game.</string>
-    <string name="getting_started_betting">This section describes some easy and optimized betting strategies for the game you are playing as well as the house edge associated with each strategy.</string>
+    <string name="getting_started_readme">Includes basic instructions on how the game is played, the rules of the game, and a few helpful tips about that game.</string>
+    <string name="getting_started_betting">Describes some easy and optimized betting strategies for the game you are playing as well as the house edge associated with each strategy.</string>
     <string name="additional_info">Additional Info</string>
     <string name="blackjack_additional">• Always try to find a table that pays 3:2 for Blackjack. Often times you will see other odds like 6:5, this substantially enlarges the house edge.\n• Don\'t be afraid to ask the dealers for help if you\'re confused about the bets or the rules at the Blackjack table.</string>
     <string name="player_actions">Player Actions</string>

@@ -1,20 +1,18 @@
-package com.tornadeck.gamblingguide;
+package com.decktronic.gamblingguide;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
-/**
- * Created by Adam on 12/15/2014.
- */
-public class CrapsActivity extends ActionBarActivity {
+
+public class MainActivity extends ActionBarActivity {
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_menu);
-        // TODO add a feature that can track how much you've won or lost
+        setContentView(R.layout.activity_main);
+
 
     }
 
@@ -25,7 +23,7 @@ public class CrapsActivity extends ActionBarActivity {
 //        getMenuInflater().inflate(R.menu.menu_main, menu);
 //        return true;
 //    }
-//
+
 //    @Override
 //    public boolean onOptionsItemSelected(MenuItem item) {
 //        // Handle action bar item clicks here. The action bar will
@@ -43,24 +41,24 @@ public class CrapsActivity extends ActionBarActivity {
 //        return super.onOptionsItemSelected(item);
 //    }
 
-    public void goToBankRoll(View view) {
-        Intent intent = new Intent(this, CrapsBankrollActivity.class);
+    public void goToBlackjack(View view) {
+        Intent intent = new Intent(this, BlackjackActivity.class);
         startActivity(intent);
     }
 
-    public void goToBetting(View view) {
-        Intent intent = new Intent(this, CrapsBettingActivity.class);
+    public void gettingStarted(View view) {
+        Intent intent = new Intent(this, GettingStartedActivity.class);
         startActivity(intent);
     }
 
-//TODO: Implement Practice
-//    public void goToPractice(View view) {
-//        Intent intent = new Intent(this, CrapsPracticeActivity.class);
+    public void goToCraps(View view) {
+        Intent intent = new Intent(this, CrapsActivity.class);
+        startActivity(intent);
+    }
+
+    //TODO: Implement map
+//    public void goToMap(View view) {
+//        Intent intent = new Intent(this, MapActivity.class);
 //        startActivity(intent);
 //    }
-
-    public void goToReadMe(View view) {
-        Intent intent = new Intent(this, CrapsReadMeActivity.class);
-        startActivity(intent);
-    }
 }

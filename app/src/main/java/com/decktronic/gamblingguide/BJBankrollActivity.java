@@ -1,10 +1,7 @@
-package com.tornadeck.gamblingguide;
+package com.decktronic.gamblingguide;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,28 +9,21 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 /**
- * Created by Adam on 1/9/2015.
+ * Created by Adam on 12/16/2014.
  */
-public class CrapsBankrollActivity extends ActionBarActivity {
+
+public class BJBankrollActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bankroll);
         final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                final double average_rolls = 3.376;
-                final double pass_std_dev = 1.0;
-                final double four_ten_std_dev = 1.41;
-                final double five_nine_std_dev = 1.22;
-                final double six_eight_std_dev = 1.10;
-                double adjusted_pass_std_dev;
-                double adjusted_four_ten_std_dev;
-                double adjusted_five_nine_std_dev;
-                double adjusted_six_eight_std_dev;
-                final double house_edge = 0.0141;
-                double number_of_rolls = 170;
-                double adjusted_num_of_rolls = 0;
-                double rolls_resolved;
+                final double bj_std_dev = 1.15;
+                double adjusted_std_dev;
+                final double house_edge = 0.0053;
+                double number_of_hands = 100;
+                double adjusted_num_of_hands = 0;
                 double average_bet = 0;
                 double base_value;
                 int final_value;
@@ -51,31 +41,24 @@ public class CrapsBankrollActivity extends ActionBarActivity {
                 String hours = hoursSpinner.getSelectedItem().toString();
 
                 if (hours.equals("30 Minutes")) {
-                    adjusted_num_of_rolls = 0.5 * number_of_rolls;
+                    adjusted_num_of_hands = 0.5 * number_of_hands;
                 } else if (hours.equals("1 Hour")) {
-                    adjusted_num_of_rolls = number_of_rolls;
+                    adjusted_num_of_hands = number_of_hands;
                 } else if (hours.equals("2 Hours")) {
-                    adjusted_num_of_rolls = 2 * number_of_rolls;
+                    adjusted_num_of_hands = 2 * number_of_hands;
                 } else if (hours.equals("3 Hours")) {
-                    adjusted_num_of_rolls = 3 * number_of_rolls;
+                    adjusted_num_of_hands = 3 * number_of_hands;
                 } else if (hours.equals("4 Hours")) {
-                    adjusted_num_of_rolls = 4 * number_of_rolls;
+                    adjusted_num_of_hands = 4 * number_of_hands;
                 } else if (hours.equals("8 Hours")) {
-                    adjusted_num_of_rolls = 8 * number_of_rolls;
+                    adjusted_num_of_hands = 8 * number_of_hands;
                 }
 
-                rolls_resolved = adjusted_num_of_rolls / average_rolls;
+                adjusted_std_dev = 1.6 * bj_std_dev;
 
-                adjusted_pass_std_dev = 1.6 * pass_std_dev;
-                adjusted_four_ten_std_dev = 1.6 * four_ten_std_dev;
-                adjusted_five_nine_std_dev = 1.6 * five_nine_std_dev;
-                adjusted_six_eight_std_dev = 1.6 * six_eight_std_dev;
-
-                //TODO average_bet = average_rolls * average_bet;
-
-                base_value = (average_bet * rolls_resolved) * house_edge;
-                final_value = (int) Math.round(base_value + (adjusted_pass_std_dev * Math.sqrt(rolls_resolved) * average_bet) + (adjusted_four_ten_std_dev * Math.sqrt(rolls_resolved) * average_bet * 6 / 36) + (adjusted_five_nine_std_dev * Math.sqrt(rolls_resolved) * average_bet * 8 / 36) + (adjusted_six_eight_std_dev * Math.sqrt(rolls_resolved) * average_bet * 10 / 36));
-                final_value_walk_away = (int) Math.round((0.5 * pass_std_dev * Math.sqrt(rolls_resolved) * average_bet) + (0.5 * four_ten_std_dev * Math.sqrt(rolls_resolved) * average_bet * 6 / 36) + (0.5 * five_nine_std_dev * Math.sqrt(rolls_resolved) * average_bet * 8 / 36) + (0.5 * six_eight_std_dev * Math.sqrt(rolls_resolved) * average_bet * 10 / 36));
+                base_value = (average_bet * adjusted_num_of_hands) * house_edge;
+                final_value = (int) Math.round(base_value + (adjusted_std_dev * Math.sqrt(adjusted_num_of_hands) * average_bet));
+                final_value_walk_away = (int) Math.round(0.5 * bj_std_dev * Math.sqrt(adjusted_num_of_hands) * average_bet);
 
                 String text_value = Integer.toString(final_value);
                 String text_value_walk_away = Integer.toString(final_value_walk_away);
@@ -88,7 +71,6 @@ public class CrapsBankrollActivity extends ActionBarActivity {
             }
         });
     }
-
 //TODO: Implement settings
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {

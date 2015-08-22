@@ -1,19 +1,15 @@
-package com.tornadeck.gamblingguide;
+package com.decktronic.gamblingguide;
 
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 
 /**
  * Created by Adam on 12/23/2014.
  */
-public class BJBettingActivity extends ActionBarActivity {
+public class BJReadMeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_betting_blackjack);
+        setContentView(R.layout.activity_readme_blackjack);
 
 
     }

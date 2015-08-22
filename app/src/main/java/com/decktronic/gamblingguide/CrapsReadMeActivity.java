@@ -1,19 +1,15 @@
-package com.tornadeck.gamblingguide;
+package com.decktronic.gamblingguide;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
-
-public class MainActivity extends ActionBarActivity {
-
-    @Override
+/**
+ * Created by Adam on 1/9/2015.
+ */
+public class CrapsReadMeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_readme_craps);
 
 
     }
@@ -25,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
 //        getMenuInflater().inflate(R.menu.menu_main, menu);
 //        return true;
 //    }
-
+//
 //    @Override
 //    public boolean onOptionsItemSelected(MenuItem item) {
 //        // Handle action bar item clicks here. The action bar will
@@ -41,26 +37,5 @@ public class MainActivity extends ActionBarActivity {
 //        }
 //
 //        return super.onOptionsItemSelected(item);
-//    }
-
-    public void goToBlackjack(View view) {
-        Intent intent = new Intent(this, BlackjackActivity.class);
-        startActivity(intent);
-    }
-
-    public void gettingStarted(View view) {
-        Intent intent = new Intent(this, GettingStartedActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToCraps(View view) {
-        Intent intent = new Intent(this, CrapsActivity.class);
-        startActivity(intent);
-    }
-
-    //TODO: Implement map
-//    public void goToMap(View view) {
-//        Intent intent = new Intent(this, MapActivity.class);
-//        startActivity(intent);
 //    }
 }

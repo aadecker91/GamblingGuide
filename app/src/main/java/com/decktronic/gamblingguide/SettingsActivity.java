@@ -1,4 +1,4 @@
-package com.tornadeck.gamblingguide;
+package com.decktronic.gamblingguide;
 
 import android.app.Activity;
 import android.os.Bundle;
